@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Untitled Document</title>
+	</head>
+	<%= javascript_include_tag "encryption",  "utilities", "authentication", "jquery" %>
+	
+	<script type="text/javascript">
+	
+		function authenticate()
+		{
+
+			// get user's password
+			var userPassword = window.name;
+
+			// set username to post
+			$('#username').attr('value', getParam("username"));
+			
+			// decrypt and set decrypted username to post
+			$('#decrypted_username').attr('value', AesCtr.decrypt(unescape(getParam("encrypted_username")), userPassword, 256));
+
+			//alert($('#username').attr('value') + "  " + $('#decrypted_username').attr('value'));
+			
+			// submit form
+			$('#authentication_form').submit();
+
+			return true;
+		}
+	
+	</script>
+	
+	<body onload="authenticate();">
+		<% form_tag ('end_login_process', :id => 'authentication_form', :method => :get) do -%>
+			<%= hidden_field 'username', nil, :id => 'username', :name => 'username' %>
+			<%= hidden_field 'decrypted_username', nil, :id => 'decrypted_username', :name => 'decrypted_username' %>
+		<% end -%>
+		
+	</body>
+</html>

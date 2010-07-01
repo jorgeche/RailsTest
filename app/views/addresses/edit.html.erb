@@ -1,0 +1,63 @@
+<%= javascript_include_tag "encryption", "jquery" %>
+
+<script type="text/javascript">
+
+	function encryptAddress()
+	{
+		// check length
+		if((1 > $('#input_encrypted_password').attr('value').length) || (1 > $('#input_address').attr('value').length))
+		{
+			alert("The address and password can't be empty.");
+		}
+		else
+		{
+			// check email format
+			if(false)
+			{
+				alert("The email address is not valid.");
+			}
+			else
+			{
+				var userPassword = window.name;
+
+				$('#address').attr('value', AesCtr.encrypt($('#input_address').attr('value'), userPassword, 256));
+
+				$('#encrypted_password').attr('value', AesCtr.encrypt($('#input_encrypted_password').attr('value'), userPassword, 256));
+	
+				$('#new_address').submit();
+			}
+		}	
+		return true;
+	}
+	
+	function decryptAddress()
+	{
+		var userPassword = window.name;
+		$('#input_address').attr('value', AesCtr.decrypt($('#address').attr('value'), userPassword, 256));
+		$('#input_encrypted_password').attr('value', AesCtr.decrypt($('#encrypted_password').attr('value'), userPassword, 256));
+
+	}
+
+</script>
+<body onload="decryptAddress();">
+	
+<h1>Editing address</h1>
+
+<% form_for(@address) do |f| %>
+  	<%= f.error_messages %>
+	<p>
+		<%= f.label :address%><br />
+		<%= text_field 'input_address', nil , :size =>20, :maxlength => 45, :id => 'input_address'%>
+		<%= f.hidden_field :address,  :value => @address[:address], :size =>20, :maxlength => 45, :id => 'address' %>
+	</p>
+	<p>
+		<%= f.label 'Password: '%><br />
+		<%= password_field 'input_encrypted_password', nil , :size =>20, :maxlength => 45, :id => 'input_encrypted_password'%>
+		<%= f.hidden_field :encrypted_password, :value => @address[:encrypted_password], :size =>20, :maxlength => 45, :id => 'encrypted_password' %>
+	</p>
+	<p>
+		<%= submit_tag "Update", :onclick => 'encryptAddress();' %>
+	</p>
+<% end %>
+
+<%= link_to 'Back', addresses_path %>

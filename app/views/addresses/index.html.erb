@@ -1,0 +1,56 @@
+<%= javascript_include_tag "encryption", "jquery" %>
+
+<script type="text/javascript">
+
+	function decryptAddresses()
+	{
+		var userPassword = window.name;
+		var counter = 0;
+		var currentAddress = '#address_' + counter;
+		var currentEncryptedPassword = '#encrypted_password_' + counter;
+
+		while($(currentAddress))
+		{
+			$(currentAddress).attr('innerHTML', AesCtr.decrypt($(currentAddress).attr('innerHTML'), userPassword, 256));
+			$(currentEncryptedPassword).attr('innerHTML', AesCtr.decrypt($(currentEncryptedPassword).attr('innerHTML'), userPassword, 256));
+	
+			counter = counter + 1;
+			currentAddress = '#address_' + counter;
+			currentEncryptedPassword = '#encrypted_password_' + counter;
+		}
+	}
+
+</script>
+<body onload="decryptAddresses();">
+<p>
+	<h1>User:
+	<%= label_tag session[:user][:username] %>
+	</h1>
+</p>
+
+
+<p>
+	<h2>Listing addresses</h2>
+</p>
+
+<table>
+  <tr>
+  </tr>
+
+<% if @addresses && @addresses.respond_to?('each') %>
+	<% addressNumber = 0 %>
+	<% @addresses.each do |address| %>
+	  <tr>
+	  	<td><%= label_tag address.address, address.address, :id => 'address_' + addressNumber.to_s() %></td>
+		<td><%= label_tag address.encrypted_password, address.encrypted_password, :id => 'encrypted_password_' + addressNumber.to_s() %></td>
+	    <td><%= link_to 'Edit', edit_address_path(address) %></td>
+	    <td><%= link_to 'Destroy', address, :confirm => 'Are you sure?', :method => :delete %></td>
+	  	<% addressNumber += 1%>
+	  </tr>
+	<% end %>
+<% end %>
+</table>
+<br />
+
+<%= link_to 'Log out', :controller => :user, :action => 'logout' %>
+<%= link_to 'New address', new_address_path %>
