@@ -18,7 +18,7 @@
 			}
 			else
 			{
-				var userPassword = window.name;
+				var userPassword = sessionStorage.getItem("userPassword");
 
 				$('#address').attr('value', AesCtr.encrypt($('#input_address').attr('value'), userPassword, 256));
 

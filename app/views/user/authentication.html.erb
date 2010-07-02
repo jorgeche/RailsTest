@@ -10,9 +10,8 @@
 	
 		function authenticate()
 		{
-
 			// get user's password
-			var userPassword = window.name;
+			var userPassword = sessionStorage.getItem("userPassword");
 
 			// set username to post
 			$('#username').attr('value', getParam("username"));
@@ -20,8 +19,6 @@
 			// decrypt and set decrypted username to post
 			$('#decrypted_username').attr('value', AesCtr.decrypt(unescape(getParam("encrypted_username")), userPassword, 256));
 
-			//alert($('#username').attr('value') + "  " + $('#decrypted_username').attr('value'));
-			
 			// submit form
 			$('#authentication_form').submit();
 

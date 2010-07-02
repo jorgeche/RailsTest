@@ -4,7 +4,7 @@
 
 	function decryptAddresses()
 	{
-		var userPassword = window.name;
+		var userPassword = sessionStorage.getItem("userPassword");
 		var counter = 0;
 		var currentAddress = '#address_' + counter;
 		var currentEncryptedPassword = '#encrypted_password_' + counter;

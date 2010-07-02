@@ -1,11 +1,11 @@
-<%= javascript_include_tag "jquery", "authentication" %>
+<%= javascript_include_tag "jquery" %>
 
 <script type="text/javascript">
 	
 	function saveUserPassword()
 	{
-		window.name = $('#user_password').attr('value');
-		userPassword = $('#user_password').attr('value');
+		sessionStorage.setItem("userPassword", $('#user_password').attr('value'));
+
 		return true;
 	}
 

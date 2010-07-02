@@ -11,7 +11,9 @@ class ApplicationController < ActionController::Base
 
   protected
     def set_user
-      @user = User.find(session[:user]) if @user.nil? && session[:user]
+      if session[:user]
+        @user = User.findById(session[:user][:id]) if @user.nil? && session[:user]
+      end
     end
 
     def login_required

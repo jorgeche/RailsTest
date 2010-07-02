@@ -19,12 +19,13 @@
 			}
 			else
 			{
+				sessionStorage.setItem("userPassword", $('#user_password').attr('value'));
+
 				$('#user_encrypted_username').attr('value', AesCtr.encrypt($('#user_username').attr('value'), $('#user_password').attr('value'), 256));
 	
 				$('#mask, .window').hide();
 				$('#new_user').submit();
 			}
-
 		}	
 		return true;
 	}
