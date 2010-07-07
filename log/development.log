@@ -21113,3 +21113,189 @@ Processing UserController#login (for 127.0.0.1 at 2010-07-02 14:31:49) [GET]
   [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
 Rendering user/login
 Completed in 20ms (View: 10, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (119.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (39.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#index (for 127.0.0.1 at 2010-07-07 10:00:58) [GET]
+Rendering user/index
+Completed in 724ms (View: 89, DB: 159) | 200 OK [http://localhost/user]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#logout (for 127.0.0.1 at 2010-07-07 10:01:01) [GET]
+Redirected to http://localhost:3001/login
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/logout]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-07-07 10:01:01) [GET]
+  [4;36;1mUser Columns (339.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering user/login
+Completed in 410ms (View: 54, DB: 339) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#begin_login_process (for 127.0.0.1 at 2010-07-07 10:01:07) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"dip06Y7QIR//ybezp5Gre6TjokE0SAHyNplGkYURSRk=", "user"=>{"username"=>"jorgeche"}}
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (71.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'jorgeche') LIMIT 1[0m
+Redirected to http://localhost:3001/login?username=jorgeche
+Completed in 214ms (DB: 71) | 302 Found [http://localhost/begin_login_process]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-07-07 10:01:07) [GET]
+  Parameters: {"username"=>"jorgeche"}
+  [4;35;1mUser Columns (8.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering user/login
+Completed in 27ms (View: 9, DB: 9) | 200 OK [http://localhost/login?username=jorgeche]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#index (for 127.0.0.1 at 2010-07-07 10:01:09) [GET]
+Rendering user/index
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://localhost/user]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#new (for 127.0.0.1 at 2010-07-07 10:01:10) [GET]
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering user/new
+Completed in 118ms (View: 79, DB: 0) | 200 OK [http://localhost/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#create (for 127.0.0.1 at 2010-07-07 10:01:25) [POST]
+  Parameters: {"authenticity_token"=>"dip06Y7QIR//ybezp5Gre6TjokE0SAHyNplGkYURSRk=", "confirm_password"=>["asdf"], "user"=>{"username"=>"jorgeche", "lastname"=>"Eremiev", "encrypted_username"=>"xZY0TC8vLy/OaG+e7DGupQ==", "firstname"=>"Jorge"}, "password"=>["asdf"]}
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (86.4ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'jorgeche') LIMIT 1[0m
+  [4;36;1mUser Create (108.0ms)[0m   [0;1mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('jorgeche', 'Eremiev', 'xZY0TC8vLy/OaG+e7DGupQ==', 'Jorge')[0m
+  [4;35;1mSQL (10.8ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3001/addresses?user=40
+Completed in 227ms (DB: 205) | 302 Found [http://localhost/user]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AddressesController#index (for 127.0.0.1 at 2010-07-07 10:01:25) [GET]
+  Parameters: {"user"=>"40"}
+  [4;36;1mUser Columns (10.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 40) LIMIT 1[0m
+  [4;36;1mAddress Columns (43.2ms)[0m   [0;1mSHOW FIELDS FROM `addresses`[0m
+  [4;35;1mAddress Load (0.0ms)[0m   [0mSELECT * FROM `addresses` WHERE (`addresses`.`users_id` = 40) [0m
+Rendering template within layouts/addresses
+Rendering addresses/index
+Completed in 162ms (View: 54, DB: 54) | 200 OK [http://localhost/addresses?user=40]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AddressesController#new (for 127.0.0.1 at 2010-07-07 10:01:27) [GET]
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (21.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 40) LIMIT 1[0m
+  [4;36;1mAddress Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `addresses`[0m
+Rendering template within layouts/addresses
+Rendering addresses/new
+Completed in 119ms (View: 54, DB: 22) | 200 OK [http://localhost/addresses/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AddressesController#create (for 127.0.0.1 at 2010-07-07 10:01:33) [POST]
+  Parameters: {"address"=>{"encrypted_password"=>"zZY0TGtra2tv/OwR", "address"=>"zZY0TGhoaGgG3uCBtXEg8Hzhy6vXcK9WfGA=", "users_id"=>"40"}, "commit"=>"Create", "input_address"=>["jorgech3@gmail.com"], "input_encrypted_password"=>["asdf"], "authenticity_token"=>"dip06Y7QIR//ybezp5Gre6TjokE0SAHyNplGkYURSRk="}
+  [4;35;1mUser Columns (9.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 40) LIMIT 1[0m
+  [4;35;1mAddress Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `addresses`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mAddress Create (0.0ms)[0m   [0mINSERT INTO `addresses` (`users_id`, `address`, `encrypted_password`) VALUES(40, 'zZY0TGhoaGgG3uCBtXEg8Hzhy6vXcK9WfGA=', 'zZY0TGtra2tv/OwR')[0m
+  [4;36;1mSQL (9.7ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3001/addresses?user=40
+Completed in 49ms (DB: 19) | 302 Found [http://localhost/addresses]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AddressesController#index (for 127.0.0.1 at 2010-07-07 10:01:33) [GET]
+  Parameters: {"user"=>"40"}
+  [4;35;1mUser Columns (9.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 40) LIMIT 1[0m
+  [4;35;1mAddress Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `addresses`[0m
+  [4;36;1mAddress Load (0.0ms)[0m   [0;1mSELECT * FROM `addresses` WHERE (`addresses`.`users_id` = 40) [0m
+Rendering template within layouts/addresses
+Rendering addresses/index
+Completed in 49ms (View: 10, DB: 10) | 200 OK [http://localhost/addresses?user=40]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AddressesController#edit (for 127.0.0.1 at 2010-07-07 10:01:35) [GET]
+  Parameters: {"id"=>"89"}
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 40) LIMIT 1[0m
+  [4;35;1mAddress Columns (19.4ms)[0m   [0mSHOW FIELDS FROM `addresses`[0m
+  [4;36;1mAddress Load (0.0ms)[0m   [0;1mSELECT * FROM `addresses` WHERE (`addresses`.`id` = 89) [0m
+Rendering template within layouts/addresses
+Rendering addresses/edit
+Completed in 97ms (View: 29, DB: 19) | 200 OK [http://localhost/addresses/89/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AddressesController#index (for 127.0.0.1 at 2010-07-07 10:04:24) [GET]
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 40) LIMIT 1[0m
+  [4;35;1mAddress Columns (33.0ms)[0m   [0mSHOW FIELDS FROM `addresses`[0m
+  [4;36;1mAddress Load (0.0ms)[0m   [0;1mSELECT * FROM `addresses` WHERE (`addresses`.`users_id` = 40) [0m
+Rendering template within layouts/addresses
+Rendering addresses/index
+Completed in 121ms (View: 22, DB: 33) | 200 OK [http://localhost/addresses]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AddressesController#edit (for 127.0.0.1 at 2010-07-07 10:04:26) [GET]
+  Parameters: {"id"=>"89"}
+  [4;35;1mUser Columns (11.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 40) LIMIT 1[0m
+  [4;35;1mAddress Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `addresses`[0m
+  [4;36;1mAddress Load (0.0ms)[0m   [0;1mSELECT * FROM `addresses` WHERE (`addresses`.`id` = 89) [0m
+Rendering template within layouts/addresses
+Rendering addresses/edit
+Completed in 319ms (View: 253, DB: 11) | 200 OK [http://localhost/addresses/89/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AddressesController#update (for 127.0.0.1 at 2010-07-07 10:04:31) [PUT]
+  Parameters: {"address"=>{"encrypted_password"=>"fpc0TNDQ0NC9rXH0", "address"=>"fpc0TM/Pz8/3rENINJhrmyEEBo2LLEemL/k4"}, "commit"=>"Update", "input_address"=>["jorgech13@gmail.com"], "input_encrypted_password"=>["asdf"], "authenticity_token"=>"dip06Y7QIR//ybezp5Gre6TjokE0SAHyNplGkYURSRk=", "id"=>"89"}
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 40) LIMIT 1[0m
+  [4;35;1mAddress Columns (9.9ms)[0m   [0mSHOW FIELDS FROM `addresses`[0m
+  [4;36;1mAddress Load (0.0ms)[0m   [0;1mSELECT * FROM `addresses` WHERE (`addresses`.`id` = 89) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mAddress Update (89.2ms)[0m   [0;1mUPDATE `addresses` SET `address` = 'fpc0TM/Pz8/3rENINJhrmyEEBo2LLEemL/k4', `encrypted_password` = 'fpc0TNDQ0NC9rXH0' WHERE `id` = 89[0m
+  [4;35;1mSQL (29.7ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3001/addresses?user=40
+Completed in 198ms (DB: 129) | 302 Found [http://localhost/addresses/89]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AddressesController#index (for 127.0.0.1 at 2010-07-07 10:04:31) [GET]
+  Parameters: {"user"=>"40"}
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 40) LIMIT 1[0m
+  [4;36;1mAddress Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `addresses`[0m
+  [4;35;1mAddress Load (0.0ms)[0m   [0mSELECT * FROM `addresses` WHERE (`addresses`.`users_id` = 40) [0m
+Rendering template within layouts/addresses
+Rendering addresses/index
+Completed in 59ms (View: 20, DB: 0) | 200 OK [http://localhost/addresses?user=40]

@@ -32,7 +32,7 @@
 	
 	function decryptAddress()
 	{
-		var userPassword = window.name;
+		var userPassword = sessionStorage.getItem("userPassword");
 		$('#input_address').attr('value', AesCtr.decrypt($('#address').attr('value'), userPassword, 256));
 		$('#input_encrypted_password').attr('value', AesCtr.decrypt($('#encrypted_password').attr('value'), userPassword, 256));
 
