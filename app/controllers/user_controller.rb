@@ -67,17 +67,15 @@ class UserController < ApplicationController
   def create
     @user = User.new(params[:user])
 
-    #respond_to do |format|
-      if @user.save
-        session[:user] = @user # Remember the user's id during this session
-        redirect_to(:user => @user, :controller => :addresses)
-        #format.html { redirect_to(@user, :notice => 'User was successfully created.') }
-        #format.xml  { render :xml => @user, :status => :created, :location => @user }
-      else
+    if @user.save
+      session[:user] = @user # Remember the user's id during this session
+      redirect_to(:user => @user, :controller => :addresses)
+    else
+      respond_to do |format|
         format.html { render :action => "new" }
         format.xml  { render :xml => @user.errors, :status => :unprocessable_entity }
       end
-    #end
+    end
   end
 
   # PUT /users/1
