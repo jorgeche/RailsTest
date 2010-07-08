@@ -17,12 +17,15 @@ class AddressesController < ApplicationController
   # GET /addresses/1
   # GET /addresses/1.xml
   def show
+    :index
+=begin
     @address = Address.find(params[:user][:id])
 
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @address }
     end
+=end
   end
 
   # GET /addresses/new

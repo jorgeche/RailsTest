@@ -2,13 +2,13 @@ SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL';
 
-CREATE SCHEMA IF NOT EXISTS `railstest_development` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci ;
-USE `railstest_development`;
+CREATE SCHEMA IF NOT EXISTS `railstest_test` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci ;
+USE `railstest_test`;
 
 -- -----------------------------------------------------
--- Table `railstest_development`.`users`
+-- Table `railstest_test`.`users`
 -- -----------------------------------------------------
-CREATE  TABLE IF NOT EXISTS `railstest_development`.`users` (
+CREATE  TABLE IF NOT EXISTS `railstest_test`.`users` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `username` VARCHAR(45) NOT NULL ,
   `encrypted_username` VARCHAR(255) NOT NULL ,
@@ -20,18 +20,17 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `railstest_development`.`addresses`
+-- Table `railstest_test`.`addresses`
 -- -----------------------------------------------------
-CREATE  TABLE IF NOT EXISTS `railstest_development`.`addresses` (
+CREATE  TABLE IF NOT EXISTS `railstest_test`.`addresses` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `users_id` INT NOT NULL ,
   `address` VARCHAR(255) NOT NULL ,
-  `encrypted_password` VARCHAR(255) NOT NULL ,
   PRIMARY KEY (`id`) ,
   INDEX `fk_addresses_users` (`users_id` ASC) ,
   CONSTRAINT `fk_addresses_users`
     FOREIGN KEY (`users_id` )
-    REFERENCES `railstest_development`.`users` (`id` )
+    REFERENCES `railstest_test`.`users` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
