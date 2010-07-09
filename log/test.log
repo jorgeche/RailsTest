@@ -1724,3 +1724,2631 @@ Processing UserController#index (for 0.0.0.0 at 2010-07-08 12:21:41) [GET]
 Rendering user/index
 Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user]
   [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 10:30:50) [POST]
+  Parameters: {"user"=>{"username"=>"user_1", "lastname"=>"user_1_lastname", "encrypted_username"=>"encrypted_user_1", "firstname"=>"user_1_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_1') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_1', 'user_1_lastname', 'encrypted_user_1', 'user_1_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=29
+Completed in 22ms (DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 10:30:50) [GET]
+Rendering user/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 10:30:50) [POST]
+  Parameters: {"user"=>{"username"=>"user_2", "lastname"=>"user_2_lastname", "encrypted_username"=>"encrypted_user_2", "firstname"=>"user_2_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_2') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_2', 'user_2_lastname', 'encrypted_user_2', 'user_2_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=30
+Completed in 11ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 10:30:50) [GET]
+Rendering user/new
+Completed in 11ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 10:30:50) [POST]
+  Parameters: {"user"=>{"username"=>"user_3", "lastname"=>"user_3_lastname", "encrypted_username"=>"encrypted_user_3", "firstname"=>"user_3_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_3') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_3', 'user_3_lastname', 'encrypted_user_3', 'user_3_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=31
+Completed in 44ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 10:30:50) [GET]
+Rendering user/new
+Completed in 11ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 10:30:50) [POST]
+  Parameters: {"user"=>{"username"=>"user_4", "lastname"=>"user_4_lastname", "encrypted_username"=>"encrypted_user_4", "firstname"=>"user_4_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_4') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_4', 'user_4_lastname', 'encrypted_user_4', 'user_4_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=32
+Completed in 44ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 10:30:50) [GET]
+Rendering user/new
+Completed in 11ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 10:30:50) [POST]
+  Parameters: {"user"=>{"username"=>"user_5", "lastname"=>"user_5_lastname", "encrypted_username"=>"encrypted_user_5", "firstname"=>"user_5_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_5') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_5', 'user_5_lastname', 'encrypted_user_5', 'user_5_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=33
+Completed in 22ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 10:30:50) [GET]
+Rendering user/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (44.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 10:30:50) [POST]
+  Parameters: {"user"=>{"username"=>"username", "lastname"=>"lastname", "encrypted_username"=>"encrypted_username", "firstname"=>"firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'username') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('username', 'lastname', 'encrypted_username', 'firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=34
+Completed in 22ms (DB: 44) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_username&user%5Bfirstname%5D=firstname&user%5Blastname%5D=lastname&user%5Busername%5D=username]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#end_login_process (for 0.0.0.0 at 2010-07-09 10:30:50) [POST]
+  Parameters: {"username"=>"username", "encrypted_username"=>"encrypted_username"}
+Redirected to http://test.host/login?username=username
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_username&user%5Bfirstname%5D=firstname&user%5Blastname%5D=lastname&user%5Busername%5D=username]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 10:30:50) [GET]
+Rendering user/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UserController#login (for 0.0.0.0 at 2010-07-09 10:30:50) [GET]
+Rendering user/login
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UserController#index (for 0.0.0.0 at 2010-07-09 10:30:50) [GET]
+Rendering user/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 10:43:02) [POST]
+  Parameters: {"user"=>{"username"=>"user_1", "lastname"=>"user_1_lastname", "encrypted_username"=>"encrypted_user_1", "firstname"=>"user_1_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_1') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_1', 'user_1_lastname', 'encrypted_user_1', 'user_1_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=2
+Completed in 20ms (DB: 10) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 10:43:02) [GET]
+Rendering user/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 10:43:02) [POST]
+  Parameters: {"user"=>{"username"=>"user_2", "lastname"=>"user_2_lastname", "encrypted_username"=>"encrypted_user_2", "firstname"=>"user_2_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_2') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_2', 'user_2_lastname', 'encrypted_user_2', 'user_2_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=3
+Completed in 40ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 10:43:02) [GET]
+Rendering user/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 10:43:02) [POST]
+  Parameters: {"user"=>{"username"=>"user_3", "lastname"=>"user_3_lastname", "encrypted_username"=>"encrypted_user_3", "firstname"=>"user_3_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_3') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_3', 'user_3_lastname', 'encrypted_user_3', 'user_3_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=4
+Completed in 20ms (View: 0, DB: 10) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 10:43:02) [GET]
+Rendering user/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 10:43:02) [POST]
+  Parameters: {"user"=>{"username"=>"user_4", "lastname"=>"user_4_lastname", "encrypted_username"=>"encrypted_user_4", "firstname"=>"user_4_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_4') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_4', 'user_4_lastname', 'encrypted_user_4', 'user_4_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=5
+Completed in 40ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 10:43:02) [GET]
+Rendering user/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 10:43:02) [POST]
+  Parameters: {"user"=>{"username"=>"user_5", "lastname"=>"user_5_lastname", "encrypted_username"=>"encrypted_user_5", "firstname"=>"user_5_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_5') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_5', 'user_5_lastname', 'encrypted_user_5', 'user_5_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=6
+Completed in 10ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 10:43:02) [GET]
+Rendering user/new
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (20.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 10:43:02) [POST]
+  Parameters: {"user"=>{"username"=>"user", "lastname"=>"lastname", "encrypted_username"=>"user", "firstname"=>"firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+Rendering user/new
+Completed in 10ms (View: 0, DB: 20) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=user&user%5Bfirstname%5D=firstname&user%5Blastname%5D=lastname&user%5Busername%5D=user]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 10:43:02) [GET]
+Rendering user/new
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/user/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserController#login (for 0.0.0.0 at 2010-07-09 10:43:02) [GET]
+Rendering user/login
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserController#index (for 0.0.0.0 at 2010-07-09 10:43:02) [GET]
+Rendering user/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (11.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 11:36:09) [POST]
+  Parameters: {"user"=>{"username"=>"user_1", "lastname"=>"user_1_lastname", "encrypted_username"=>"encrypted_user_1", "firstname"=>"user_1_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_1') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_1', 'user_1_lastname', 'encrypted_user_1', 'user_1_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=7
+Completed in 22ms (DB: 11) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 11:36:09) [GET]
+Rendering user/new
+Completed in 11ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 11:36:09) [POST]
+  Parameters: {"user"=>{"username"=>"user_2", "lastname"=>"user_2_lastname", "encrypted_username"=>"encrypted_user_2", "firstname"=>"user_2_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_2') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_2', 'user_2_lastname', 'encrypted_user_2', 'user_2_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=8
+Completed in 22ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 11:36:09) [GET]
+Rendering user/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 11:36:09) [POST]
+  Parameters: {"user"=>{"username"=>"user_3", "lastname"=>"user_3_lastname", "encrypted_username"=>"encrypted_user_3", "firstname"=>"user_3_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_3') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_3', 'user_3_lastname', 'encrypted_user_3', 'user_3_firstname')[0m
+  [4;36;1mSQL (11.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=9
+Completed in 33ms (View: 0, DB: 11) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 11:36:09) [GET]
+Rendering user/new
+Completed in 11ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 11:36:09) [POST]
+  Parameters: {"user"=>{"username"=>"user_4", "lastname"=>"user_4_lastname", "encrypted_username"=>"encrypted_user_4", "firstname"=>"user_4_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_4') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_4', 'user_4_lastname', 'encrypted_user_4', 'user_4_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=10
+Completed in 33ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 11:36:09) [GET]
+Rendering user/new
+Completed in 11ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 11:36:09) [POST]
+  Parameters: {"user"=>{"username"=>"user_5", "lastname"=>"user_5_lastname", "encrypted_username"=>"encrypted_user_5", "firstname"=>"user_5_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_5') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_5', 'user_5_lastname', 'encrypted_user_5', 'user_5_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=11
+Completed in 33ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 11:36:09) [GET]
+Rendering user/new
+Completed in 11ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (44.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UserController#end_login_process (for 0.0.0.0 at 2010-07-09 11:36:09) [POST]
+  Parameters: {"username"=>"user", "encrypted_username"=>"user"}
+Redirected to http://test.host/login?username=user
+Completed in 0ms (DB: 44) | 302 Found [http://test.host/end_login_process?encrypted_username=user&username=user]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 11:36:09) [GET]
+Rendering user/new
+Completed in 11ms (View: 0, DB: 0) | 200 OK [http://test.host/user/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UserController#login (for 0.0.0.0 at 2010-07-09 11:36:09) [GET]
+Rendering user/login
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UserController#index (for 0.0.0.0 at 2010-07-09 11:36:09) [GET]
+Rendering user/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 11:37:12) [POST]
+  Parameters: {"user"=>{"username"=>"user_1", "lastname"=>"user_1_lastname", "encrypted_username"=>"encrypted_user_1", "firstname"=>"user_1_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (10.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_1') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_1', 'user_1_lastname', 'encrypted_user_1', 'user_1_firstname')[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=12
+Completed in 30ms (DB: 20) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 11:37:12) [GET]
+Rendering user/new
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 11:37:12) [POST]
+  Parameters: {"user"=>{"username"=>"user_2", "lastname"=>"user_2_lastname", "encrypted_username"=>"encrypted_user_2", "firstname"=>"user_2_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_2') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_2', 'user_2_lastname', 'encrypted_user_2', 'user_2_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=13
+Completed in 20ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 11:37:12) [GET]
+Rendering user/new
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 11:37:12) [POST]
+  Parameters: {"user"=>{"username"=>"user_3", "lastname"=>"user_3_lastname", "encrypted_username"=>"encrypted_user_3", "firstname"=>"user_3_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_3') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_3', 'user_3_lastname', 'encrypted_user_3', 'user_3_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=14
+Completed in 30ms (View: 0, DB: 10) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 11:37:12) [GET]
+Rendering user/new
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 11:37:12) [POST]
+  Parameters: {"user"=>{"username"=>"user_4", "lastname"=>"user_4_lastname", "encrypted_username"=>"encrypted_user_4", "firstname"=>"user_4_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_4') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_4', 'user_4_lastname', 'encrypted_user_4', 'user_4_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=15
+Completed in 30ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 11:37:12) [GET]
+Rendering user/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 11:37:12) [POST]
+  Parameters: {"user"=>{"username"=>"user_5", "lastname"=>"user_5_lastname", "encrypted_username"=>"encrypted_user_5", "firstname"=>"user_5_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_5') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_5', 'user_5_lastname', 'encrypted_user_5', 'user_5_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=16
+Completed in 10ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 11:37:12) [GET]
+Rendering user/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (10.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UserController#end_login_process (for 0.0.0.0 at 2010-07-09 11:37:12) [POST]
+  Parameters: {"decrypted_username"=>"user", "username"=>"user"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user') LIMIT 1[0m
+Redirected to http://test.host/addresses?user=1
+Completed in 70ms (DB: 10) | 302 Found [http://test.host/end_login_process?decrypted_username=user&username=user]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 11:37:13) [GET]
+Rendering user/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user/new]
+  [4;35;1mSQL (10.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserController#login (for 0.0.0.0 at 2010-07-09 11:37:13) [GET]
+Rendering user/login
+Completed in 10ms (View: 10, DB: 10) | 200 OK [http://test.host/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserController#index (for 0.0.0.0 at 2010-07-09 11:37:13) [GET]
+Rendering user/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 11:39:26) [POST]
+  Parameters: {"user"=>{"username"=>"user_1", "lastname"=>"user_1_lastname", "encrypted_username"=>"encrypted_user_1", "firstname"=>"user_1_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_1') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_1', 'user_1_lastname', 'encrypted_user_1', 'user_1_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=17
+Completed in 20ms (DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 11:39:26) [GET]
+Rendering user/new
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 11:39:26) [POST]
+  Parameters: {"user"=>{"username"=>"user_2", "lastname"=>"user_2_lastname", "encrypted_username"=>"encrypted_user_2", "firstname"=>"user_2_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_2') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_2', 'user_2_lastname', 'encrypted_user_2', 'user_2_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=18
+Completed in 20ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 11:39:26) [GET]
+Rendering user/new
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 11:39:26) [POST]
+  Parameters: {"user"=>{"username"=>"user_3", "lastname"=>"user_3_lastname", "encrypted_username"=>"encrypted_user_3", "firstname"=>"user_3_firstname"}}
+  [4;35;1mSQL (10.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_3') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_3', 'user_3_lastname', 'encrypted_user_3', 'user_3_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=19
+Completed in 40ms (View: 0, DB: 10) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 11:39:26) [GET]
+Rendering user/new
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 11:39:26) [POST]
+  Parameters: {"user"=>{"username"=>"user_4", "lastname"=>"user_4_lastname", "encrypted_username"=>"encrypted_user_4", "firstname"=>"user_4_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_4') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_4', 'user_4_lastname', 'encrypted_user_4', 'user_4_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=20
+Completed in 30ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 11:39:26) [GET]
+Rendering user/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 11:39:26) [POST]
+  Parameters: {"user"=>{"username"=>"user_5", "lastname"=>"user_5_lastname", "encrypted_username"=>"encrypted_user_5", "firstname"=>"user_5_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_5') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_5', 'user_5_lastname', 'encrypted_user_5', 'user_5_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=21
+Completed in 20ms (View: 0, DB: 10) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 11:39:26) [GET]
+Rendering user/new
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UserController#end_login_process (for 0.0.0.0 at 2010-07-09 11:39:26) [POST]
+  Parameters: {"decrypted_username"=>"user", "username"=>"user"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user') LIMIT 1[0m
+Redirected to http://test.host/addresses?user=1
+Completed in 50ms (DB: 0) | 302 Found [http://test.host/end_login_process?decrypted_username=user&username=user]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 11:39:26) [GET]
+Rendering user/new
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://test.host/user/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserController#login (for 0.0.0.0 at 2010-07-09 11:39:26) [GET]
+Rendering user/login
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserController#index (for 0.0.0.0 at 2010-07-09 11:39:26) [GET]
+Rendering user/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 13:49:16) [POST]
+  Parameters: {"user"=>{"username"=>"user_1", "lastname"=>"user_1_lastname", "encrypted_username"=>"encrypted_user_1", "firstname"=>"user_1_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_1') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_1', 'user_1_lastname', 'encrypted_user_1', 'user_1_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=22
+Completed in 22ms (DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 13:49:16) [GET]
+Rendering user/new
+Completed in 11ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 13:49:16) [POST]
+  Parameters: {"user"=>{"username"=>"user_2", "lastname"=>"user_2_lastname", "encrypted_username"=>"encrypted_user_2", "firstname"=>"user_2_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_2') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_2', 'user_2_lastname', 'encrypted_user_2', 'user_2_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=23
+Completed in 99ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 13:49:16) [GET]
+Rendering user/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 13:49:16) [POST]
+  Parameters: {"user"=>{"username"=>"user_3", "lastname"=>"user_3_lastname", "encrypted_username"=>"encrypted_user_3", "firstname"=>"user_3_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_3') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_3', 'user_3_lastname', 'encrypted_user_3', 'user_3_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=24
+Completed in 33ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 13:49:16) [GET]
+Rendering user/new
+Completed in 11ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 13:49:16) [POST]
+  Parameters: {"user"=>{"username"=>"user_4", "lastname"=>"user_4_lastname", "encrypted_username"=>"encrypted_user_4", "firstname"=>"user_4_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_4') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_4', 'user_4_lastname', 'encrypted_user_4', 'user_4_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=25
+Completed in 44ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (11.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 13:49:16) [GET]
+Rendering user/new
+Completed in 11ms (View: 11, DB: 11) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 13:49:16) [POST]
+  Parameters: {"user"=>{"username"=>"user_5", "lastname"=>"user_5_lastname", "encrypted_username"=>"encrypted_user_5", "firstname"=>"user_5_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_5') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_5', 'user_5_lastname', 'encrypted_user_5', 'user_5_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=26
+Completed in 22ms (View: 11, DB: 11) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 13:49:16) [GET]
+Rendering user/new
+Completed in 11ms (View: 11, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (66.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UserController#end_login_process (for 0.0.0.0 at 2010-07-09 13:49:16) [POST]
+  Parameters: {"decrypted_username"=>"user", "username"=>"user"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user') LIMIT 1[0m
+Redirected to http://test.host/addresses?user=1
+Completed in 97ms (DB: 66) | 302 Found [http://test.host/end_login_process?decrypted_username=user&username=user]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 13:49:17) [GET]
+Rendering user/new
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/user/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserController#login (for 0.0.0.0 at 2010-07-09 13:49:17) [GET]
+Rendering user/login
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserController#index (for 0.0.0.0 at 2010-07-09 13:49:17) [GET]
+Rendering user/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 13:52:16) [POST]
+  Parameters: {"user"=>{"username"=>"user_1", "lastname"=>"user_1_lastname", "encrypted_username"=>"encrypted_user_1", "firstname"=>"user_1_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_1') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_1', 'user_1_lastname', 'encrypted_user_1', 'user_1_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=27
+Completed in 22ms (DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 13:52:16) [GET]
+Rendering user/new
+Completed in 11ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 13:52:16) [POST]
+  Parameters: {"user"=>{"username"=>"user_2", "lastname"=>"user_2_lastname", "encrypted_username"=>"encrypted_user_2", "firstname"=>"user_2_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_2') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_2', 'user_2_lastname', 'encrypted_user_2', 'user_2_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=28
+Completed in 32ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 13:52:16) [GET]
+Rendering user/new
+Completed in 11ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 13:52:16) [POST]
+  Parameters: {"user"=>{"username"=>"user_3", "lastname"=>"user_3_lastname", "encrypted_username"=>"encrypted_user_3", "firstname"=>"user_3_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_3') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_3', 'user_3_lastname', 'encrypted_user_3', 'user_3_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=29
+Completed in 43ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 13:52:16) [GET]
+Rendering user/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 13:52:16) [POST]
+  Parameters: {"user"=>{"username"=>"user_4", "lastname"=>"user_4_lastname", "encrypted_username"=>"encrypted_user_4", "firstname"=>"user_4_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_4') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_4', 'user_4_lastname', 'encrypted_user_4', 'user_4_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=30
+Completed in 32ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 13:52:16) [GET]
+Rendering user/new
+Completed in 11ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 13:52:16) [POST]
+  Parameters: {"user"=>{"username"=>"user_5", "lastname"=>"user_5_lastname", "encrypted_username"=>"encrypted_user_5", "firstname"=>"user_5_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_5') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_5', 'user_5_lastname', 'encrypted_user_5', 'user_5_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=31
+Completed in 22ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 13:52:16) [GET]
+Rendering user/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UserController#end_login_process (for 0.0.0.0 at 2010-07-09 13:52:17) [POST]
+  Parameters: {"decrypted_username"=>"user", "username"=>"user"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user') LIMIT 1[0m
+Redirected to http://test.host/addresses?user=1
+Completed in 54ms (DB: 0) | 302 Found [http://test.host/end_login_process?decrypted_username=user&username=user]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 13:52:17) [GET]
+Rendering user/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserController#login (for 0.0.0.0 at 2010-07-09 13:52:17) [GET]
+Rendering user/login
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserController#index (for 0.0.0.0 at 2010-07-09 13:52:17) [GET]
+Rendering user/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 13:53:30) [POST]
+  Parameters: {"user"=>{"username"=>"user_1", "lastname"=>"user_1_lastname", "encrypted_username"=>"encrypted_user_1", "firstname"=>"user_1_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_1') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_1', 'user_1_lastname', 'encrypted_user_1', 'user_1_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=32
+Completed in 20ms (DB: 20) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 13:53:30) [GET]
+Rendering user/new
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 13:53:30) [POST]
+  Parameters: {"user"=>{"username"=>"user_2", "lastname"=>"user_2_lastname", "encrypted_username"=>"encrypted_user_2", "firstname"=>"user_2_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_2') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_2', 'user_2_lastname', 'encrypted_user_2', 'user_2_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=33
+Completed in 30ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 13:53:30) [GET]
+Rendering user/new
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 13:53:30) [POST]
+  Parameters: {"user"=>{"username"=>"user_3", "lastname"=>"user_3_lastname", "encrypted_username"=>"encrypted_user_3", "firstname"=>"user_3_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_3') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_3', 'user_3_lastname', 'encrypted_user_3', 'user_3_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=34
+Completed in 40ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 13:53:30) [GET]
+Rendering user/new
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 13:53:30) [POST]
+  Parameters: {"user"=>{"username"=>"user_4", "lastname"=>"user_4_lastname", "encrypted_username"=>"encrypted_user_4", "firstname"=>"user_4_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_4') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_4', 'user_4_lastname', 'encrypted_user_4', 'user_4_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=35
+Completed in 20ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 13:53:30) [GET]
+Rendering user/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 13:53:30) [POST]
+  Parameters: {"user"=>{"username"=>"user_5", "lastname"=>"user_5_lastname", "encrypted_username"=>"encrypted_user_5", "firstname"=>"user_5_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_5') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_5', 'user_5_lastname', 'encrypted_user_5', 'user_5_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=36
+Completed in 30ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 13:53:30) [GET]
+Rendering user/new
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (30.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UserController#end_login_process (for 0.0.0.0 at 2010-07-09 13:53:30) [POST]
+  Parameters: {"decrypted_username"=>"user", "username"=>"user"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user') LIMIT 1[0m
+Redirected to http://test.host/addresses?user=1
+Completed in 60ms (DB: 30) | 302 Found [http://test.host/end_login_process?decrypted_username=user&username=user]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 13:53:30) [GET]
+Rendering user/new
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/user/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserController#login (for 0.0.0.0 at 2010-07-09 13:53:30) [GET]
+Rendering user/login
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserController#index (for 0.0.0.0 at 2010-07-09 13:53:30) [GET]
+Rendering user/index
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/user]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 13:54:30) [POST]
+  Parameters: {"user"=>{"username"=>"user_1", "lastname"=>"user_1_lastname", "encrypted_username"=>"encrypted_user_1", "firstname"=>"user_1_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_1') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_1', 'user_1_lastname', 'encrypted_user_1', 'user_1_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=37
+Completed in 20ms (DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 13:54:30) [GET]
+Rendering user/new
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 13:54:30) [POST]
+  Parameters: {"user"=>{"username"=>"user_2", "lastname"=>"user_2_lastname", "encrypted_username"=>"encrypted_user_2", "firstname"=>"user_2_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_2') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_2', 'user_2_lastname', 'encrypted_user_2', 'user_2_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=38
+Completed in 60ms (View: 10, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 13:54:30) [GET]
+Rendering user/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 13:54:30) [POST]
+  Parameters: {"user"=>{"username"=>"user_3", "lastname"=>"user_3_lastname", "encrypted_username"=>"encrypted_user_3", "firstname"=>"user_3_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_3') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_3', 'user_3_lastname', 'encrypted_user_3', 'user_3_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=39
+Completed in 30ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 13:54:30) [GET]
+Rendering user/new
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 13:54:30) [POST]
+  Parameters: {"user"=>{"username"=>"user_4", "lastname"=>"user_4_lastname", "encrypted_username"=>"encrypted_user_4", "firstname"=>"user_4_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (10.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_4') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_4', 'user_4_lastname', 'encrypted_user_4', 'user_4_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=40
+Completed in 50ms (View: 0, DB: 10) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 13:54:30) [GET]
+Rendering user/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 13:54:30) [POST]
+  Parameters: {"user"=>{"username"=>"user_5", "lastname"=>"user_5_lastname", "encrypted_username"=>"encrypted_user_5", "firstname"=>"user_5_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (10.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_5') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_5', 'user_5_lastname', 'encrypted_user_5', 'user_5_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=41
+Completed in 20ms (View: 0, DB: 10) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 13:54:30) [GET]
+Rendering user/new
+Completed in 361ms (View: 340, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (80.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UserController#end_login_process (for 0.0.0.0 at 2010-07-09 13:54:31) [POST]
+  Parameters: {"decrypted_username"=>"user", "username"=>"user"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user') LIMIT 1[0m
+Redirected to http://test.host/addresses?user=1
+Completed in 160ms (DB: 80) | 302 Found [http://test.host/end_login_process?decrypted_username=user&username=user]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 13:54:31) [GET]
+Rendering user/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserController#login (for 0.0.0.0 at 2010-07-09 13:54:31) [GET]
+Rendering user/login
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserController#index (for 0.0.0.0 at 2010-07-09 13:54:31) [GET]
+Rendering user/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 13:57:25) [POST]
+  Parameters: {"user"=>{"username"=>"user_1", "lastname"=>"user_1_lastname", "encrypted_username"=>"encrypted_user_1", "firstname"=>"user_1_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_1') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_1', 'user_1_lastname', 'encrypted_user_1', 'user_1_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=42
+Completed in 30ms (DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 13:57:25) [GET]
+Rendering user/new
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 13:57:25) [POST]
+  Parameters: {"user"=>{"username"=>"user_2", "lastname"=>"user_2_lastname", "encrypted_username"=>"encrypted_user_2", "firstname"=>"user_2_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_2') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_2', 'user_2_lastname', 'encrypted_user_2', 'user_2_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=43
+Completed in 40ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 13:57:25) [GET]
+Rendering user/new
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 13:57:25) [POST]
+  Parameters: {"user"=>{"username"=>"user_3", "lastname"=>"user_3_lastname", "encrypted_username"=>"encrypted_user_3", "firstname"=>"user_3_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_3') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_3', 'user_3_lastname', 'encrypted_user_3', 'user_3_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=44
+Completed in 30ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 13:57:25) [GET]
+Rendering user/new
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 13:57:25) [POST]
+  Parameters: {"user"=>{"username"=>"user_4", "lastname"=>"user_4_lastname", "encrypted_username"=>"encrypted_user_4", "firstname"=>"user_4_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_4') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_4', 'user_4_lastname', 'encrypted_user_4', 'user_4_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=45
+Completed in 20ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 13:57:25) [GET]
+Rendering user/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 13:57:25) [POST]
+  Parameters: {"user"=>{"username"=>"user_5", "lastname"=>"user_5_lastname", "encrypted_username"=>"encrypted_user_5", "firstname"=>"user_5_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_5') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_5', 'user_5_lastname', 'encrypted_user_5', 'user_5_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=46
+Completed in 20ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 13:57:25) [GET]
+Rendering user/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (30.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UserController#end_login_process (for 0.0.0.0 at 2010-07-09 13:57:26) [POST]
+  Parameters: {"decrypted_username"=>"user", "username"=>"user"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user') LIMIT 1[0m
+Redirected to http://test.host/addresses?user=1
+Completed in 50ms (DB: 30) | 302 Found [http://test.host/end_login_process?decrypted_username=user&username=user]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 13:57:26) [GET]
+Rendering user/new
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/user/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserController#login (for 0.0.0.0 at 2010-07-09 13:57:26) [GET]
+Rendering user/login
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserController#index (for 0.0.0.0 at 2010-07-09 13:57:26) [GET]
+Rendering user/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 13:59:52) [POST]
+  Parameters: {"user"=>{"username"=>"user_1", "lastname"=>"user_1_lastname", "encrypted_username"=>"encrypted_user_1", "firstname"=>"user_1_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_1') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_1', 'user_1_lastname', 'encrypted_user_1', 'user_1_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=47
+Completed in 30ms (DB: 10) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 13:59:52) [GET]
+Rendering user/new
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 13:59:52) [POST]
+  Parameters: {"user"=>{"username"=>"user_2", "lastname"=>"user_2_lastname", "encrypted_username"=>"encrypted_user_2", "firstname"=>"user_2_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_2') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_2', 'user_2_lastname', 'encrypted_user_2', 'user_2_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=48
+Completed in 20ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 13:59:52) [GET]
+Rendering user/new
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 13:59:52) [POST]
+  Parameters: {"user"=>{"username"=>"user_3", "lastname"=>"user_3_lastname", "encrypted_username"=>"encrypted_user_3", "firstname"=>"user_3_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_3') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_3', 'user_3_lastname', 'encrypted_user_3', 'user_3_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=49
+Completed in 30ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 13:59:52) [GET]
+Rendering user/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 13:59:52) [POST]
+  Parameters: {"user"=>{"username"=>"user_4", "lastname"=>"user_4_lastname", "encrypted_username"=>"encrypted_user_4", "firstname"=>"user_4_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_4') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_4', 'user_4_lastname', 'encrypted_user_4', 'user_4_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=50
+Completed in 40ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 13:59:52) [GET]
+Rendering user/new
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 13:59:52) [POST]
+  Parameters: {"user"=>{"username"=>"user_5", "lastname"=>"user_5_lastname", "encrypted_username"=>"encrypted_user_5", "firstname"=>"user_5_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_5') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_5', 'user_5_lastname', 'encrypted_user_5', 'user_5_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=51
+Completed in 10ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 13:59:52) [GET]
+Rendering user/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UserController#end_login_process (for 0.0.0.0 at 2010-07-09 13:59:52) [POST]
+  Parameters: {"decrypted_username"=>"user", "username"=>"user"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user') LIMIT 1[0m
+Redirected to http://test.host/addresses?user=1
+Completed in 50ms (DB: 0) | 302 Found [http://test.host/end_login_process?decrypted_username=user&username=user]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 13:59:52) [GET]
+Rendering user/new
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/user/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserController#login (for 0.0.0.0 at 2010-07-09 13:59:52) [GET]
+Rendering user/login
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserController#index (for 0.0.0.0 at 2010-07-09 13:59:52) [GET]
+Rendering user/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (9.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 14:01:10) [POST]
+  Parameters: {"user"=>{"username"=>"user_1", "lastname"=>"user_1_lastname", "encrypted_username"=>"encrypted_user_1", "firstname"=>"user_1_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_1') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_1', 'user_1_lastname', 'encrypted_user_1', 'user_1_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=52
+Completed in 30ms (DB: 10) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 14:01:10) [GET]
+Rendering user/new
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 14:01:10) [POST]
+  Parameters: {"user"=>{"username"=>"user_2", "lastname"=>"user_2_lastname", "encrypted_username"=>"encrypted_user_2", "firstname"=>"user_2_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_2') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_2', 'user_2_lastname', 'encrypted_user_2', 'user_2_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=53
+Completed in 20ms (View: 10, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 14:01:10) [GET]
+Rendering user/new
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 14:01:10) [POST]
+  Parameters: {"user"=>{"username"=>"user_3", "lastname"=>"user_3_lastname", "encrypted_username"=>"encrypted_user_3", "firstname"=>"user_3_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_3') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_3', 'user_3_lastname', 'encrypted_user_3', 'user_3_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=54
+Completed in 30ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 14:01:10) [GET]
+Rendering user/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 14:01:10) [POST]
+  Parameters: {"user"=>{"username"=>"user_4", "lastname"=>"user_4_lastname", "encrypted_username"=>"encrypted_user_4", "firstname"=>"user_4_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_4') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_4', 'user_4_lastname', 'encrypted_user_4', 'user_4_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=55
+Completed in 30ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 14:01:10) [GET]
+Rendering user/new
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 14:01:10) [POST]
+  Parameters: {"user"=>{"username"=>"user_5", "lastname"=>"user_5_lastname", "encrypted_username"=>"encrypted_user_5", "firstname"=>"user_5_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_5') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_5', 'user_5_lastname', 'encrypted_user_5', 'user_5_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=56
+Completed in 20ms (View: 10, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 14:01:10) [GET]
+Rendering user/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UserController#end_login_process (for 0.0.0.0 at 2010-07-09 14:01:10) [POST]
+  Parameters: {"decrypted_username"=>"user", "username"=>"user"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user') LIMIT 1[0m
+Redirected to http://test.host/addresses?user=1
+Completed in 50ms (DB: 0) | 302 Found [http://test.host/end_login_process?decrypted_username=user&username=user]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 14:01:10) [GET]
+Rendering user/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserController#login (for 0.0.0.0 at 2010-07-09 14:01:10) [GET]
+Rendering user/login
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://test.host/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserController#index (for 0.0.0.0 at 2010-07-09 14:01:10) [GET]
+Rendering user/index
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://test.host/user]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 14:03:29) [POST]
+  Parameters: {"user"=>{"username"=>"user_1", "lastname"=>"user_1_lastname", "encrypted_username"=>"encrypted_user_1", "firstname"=>"user_1_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_1') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_1', 'user_1_lastname', 'encrypted_user_1', 'user_1_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=57
+Completed in 20ms (DB: 10) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 14:03:29) [GET]
+Rendering user/new
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 14:03:29) [POST]
+  Parameters: {"user"=>{"username"=>"user_2", "lastname"=>"user_2_lastname", "encrypted_username"=>"encrypted_user_2", "firstname"=>"user_2_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_2') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_2', 'user_2_lastname', 'encrypted_user_2', 'user_2_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=58
+Completed in 20ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (10.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 14:03:29) [GET]
+Rendering user/new
+Completed in 10ms (View: 0, DB: 10) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 14:03:29) [POST]
+  Parameters: {"user"=>{"username"=>"user_3", "lastname"=>"user_3_lastname", "encrypted_username"=>"encrypted_user_3", "firstname"=>"user_3_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (10.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_3') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_3', 'user_3_lastname', 'encrypted_user_3', 'user_3_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=59
+Completed in 20ms (View: 0, DB: 20) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 14:03:29) [GET]
+Rendering user/new
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 14:03:29) [POST]
+  Parameters: {"user"=>{"username"=>"user_4", "lastname"=>"user_4_lastname", "encrypted_username"=>"encrypted_user_4", "firstname"=>"user_4_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_4') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_4', 'user_4_lastname', 'encrypted_user_4', 'user_4_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=60
+Completed in 40ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 14:03:29) [GET]
+Rendering user/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 14:03:29) [POST]
+  Parameters: {"user"=>{"username"=>"user_5", "lastname"=>"user_5_lastname", "encrypted_username"=>"encrypted_user_5", "firstname"=>"user_5_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_5') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_5', 'user_5_lastname', 'encrypted_user_5', 'user_5_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=61
+Completed in 20ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 14:03:29) [GET]
+Rendering user/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (40.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UserController#end_login_process (for 0.0.0.0 at 2010-07-09 14:03:29) [POST]
+  Parameters: {"decrypted_username"=>"user", "username"=>"user"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user') LIMIT 1[0m
+Redirected to http://test.host/addresses?user=1
+Completed in 100ms (DB: 40) | 302 Found [http://test.host/end_login_process?decrypted_username=user&username=user]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 14:03:29) [GET]
+Rendering user/new
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://test.host/user/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserController#login (for 0.0.0.0 at 2010-07-09 14:03:29) [GET]
+Rendering user/login
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserController#index (for 0.0.0.0 at 2010-07-09 14:03:29) [GET]
+Rendering user/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 14:03:48) [POST]
+  Parameters: {"user"=>{"username"=>"user_1", "lastname"=>"user_1_lastname", "encrypted_username"=>"encrypted_user_1", "firstname"=>"user_1_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_1') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_1', 'user_1_lastname', 'encrypted_user_1', 'user_1_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=62
+Completed in 20ms (DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 14:03:48) [GET]
+Rendering user/new
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 14:03:48) [POST]
+  Parameters: {"user"=>{"username"=>"user_2", "lastname"=>"user_2_lastname", "encrypted_username"=>"encrypted_user_2", "firstname"=>"user_2_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_2') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_2', 'user_2_lastname', 'encrypted_user_2', 'user_2_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=63
+Completed in 30ms (View: 10, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 14:03:48) [GET]
+Rendering user/new
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 14:03:48) [POST]
+  Parameters: {"user"=>{"username"=>"user_3", "lastname"=>"user_3_lastname", "encrypted_username"=>"encrypted_user_3", "firstname"=>"user_3_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_3') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_3', 'user_3_lastname', 'encrypted_user_3', 'user_3_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=64
+Completed in 30ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (10.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 14:03:48) [GET]
+Rendering user/new
+Completed in 10ms (View: 0, DB: 10) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 14:03:48) [POST]
+  Parameters: {"user"=>{"username"=>"user_4", "lastname"=>"user_4_lastname", "encrypted_username"=>"encrypted_user_4", "firstname"=>"user_4_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_4') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_4', 'user_4_lastname', 'encrypted_user_4', 'user_4_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=65
+Completed in 30ms (View: 0, DB: 10) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 14:03:48) [GET]
+Rendering user/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#create (for 0.0.0.0 at 2010-07-09 14:03:48) [POST]
+  Parameters: {"user"=>{"username"=>"user_5", "lastname"=>"user_5_lastname", "encrypted_username"=>"encrypted_user_5", "firstname"=>"user_5_firstname"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`username` = BINARY 'user_5') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`username`, `lastname`, `encrypted_username`, `firstname`) VALUES('user_5', 'user_5_lastname', 'encrypted_user_5', 'user_5_firstname')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=66
+Completed in 20ms (View: 0, DB: 0) | 302 Found [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 14:03:48) [GET]
+Rendering user/new
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/user?user%5Bencrypted_username%5D=encrypted_user_1&user%5Bfirstname%5D=user_1_firstname&user%5Blastname%5D=user_1_lastname&user%5Busername%5D=user_1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing UserController#end_login_process (for 0.0.0.0 at 2010-07-09 14:03:48) [POST]
+  Parameters: {"decrypted_username"=>"user", "username"=>"user"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user') LIMIT 1[0m
+Redirected to http://test.host/addresses?user=1
+Completed in 50ms (DB: 0) | 302 Found [http://test.host/end_login_process?decrypted_username=user&username=user]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserController#new (for 0.0.0.0 at 2010-07-09 14:03:49) [GET]
+Rendering user/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserController#login (for 0.0.0.0 at 2010-07-09 14:03:49) [GET]
+Rendering user/login
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserController#index (for 0.0.0.0 at 2010-07-09 14:03:49) [GET]
+Rendering user/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/user]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#destroy (for 0.0.0.0 at 2010-07-09 14:08:53) [POST]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UserController#destroy (for 0.0.0.0 at 2010-07-09 14:09:39) [POST]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Destroy (0.0ms)[0m   [0mDELETE FROM `users` WHERE `id` = 2[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/user
+Completed in 10ms (DB: 0) | 302 Found [http://test.host/user/2]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UserController#destroy (for 0.0.0.0 at 2010-07-09 14:10:20) [POST]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (10.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Destroy (0.0ms)[0m   [0;1mDELETE FROM `users` WHERE `id` = 2[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/user
+Completed in 20ms (DB: 10) | 302 Found [http://test.host/user/2]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing AddressesController#index (for 0.0.0.0 at 2010-07-09 14:16:35) [GET]
+Redirected to http://test.host/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/addresses]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#index (for 0.0.0.0 at 2010-07-09 14:19:31) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mAddress Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `addresses`[0m
+  [4;35;1mAddress Load (0.0ms)[0m   [0mSELECT * FROM `addresses` WHERE (`addresses`.`users_id` = 1) [0m
+Rendering template within layouts/addresses
+Rendering addresses/index
+Completed in 20ms (View: 0, DB: 10) | 200 OK [http://test.host/addresses]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing AddressesController#new (for 0.0.0.0 at 2010-07-09 14:20:29) [GET]
+Redirected to http://test.host/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/addresses/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#index (for 0.0.0.0 at 2010-07-09 14:20:29) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mAddress Columns (10.0ms)[0m   [0;1mSHOW FIELDS FROM `addresses`[0m
+  [4;35;1mAddress Load (0.0ms)[0m   [0mSELECT * FROM `addresses` WHERE (`addresses`.`users_id` = 1) [0m
+Rendering template within layouts/addresses
+Rendering addresses/index
+Completed in 40ms (View: 10, DB: 10) | 200 OK [http://test.host/addresses]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (10.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing AddressesController#new (for 0.0.0.0 at 2010-07-09 14:25:36) [GET]
+Redirected to http://test.host/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/addresses/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#index (for 0.0.0.0 at 2010-07-09 14:25:37) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mAddress Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `addresses`[0m
+  [4;35;1mAddress Load (0.0ms)[0m   [0mSELECT * FROM `addresses` WHERE (`addresses`.`users_id` = 1) [0m
+Rendering template within layouts/addresses
+Rendering addresses/index
+Completed in 20ms (View: 0, DB: 0) | 200 OK [http://test.host/addresses]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing AddressesController#new (for 0.0.0.0 at 2010-07-09 14:27:02) [GET]
+Redirected to http://test.host/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/addresses/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#index (for 0.0.0.0 at 2010-07-09 14:27:02) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mAddress Columns (10.0ms)[0m   [0;1mSHOW FIELDS FROM `addresses`[0m
+  [4;35;1mAddress Load (0.0ms)[0m   [0mSELECT * FROM `addresses` WHERE (`addresses`.`users_id` = 1) [0m
+Rendering template within layouts/addresses
+Rendering addresses/index
+Completed in 30ms (View: 10, DB: 10) | 200 OK [http://test.host/addresses]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing AddressesController#new (for 0.0.0.0 at 2010-07-09 14:31:49) [GET]
+Redirected to http://test.host/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/addresses/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#index (for 0.0.0.0 at 2010-07-09 14:31:49) [GET]
+Redirected to http://test.host/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 0ms (DB: 10) | 302 Found [http://test.host/addresses]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#index (for 0.0.0.0 at 2010-07-09 14:32:40) [GET]
+Redirected to http://test.host/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 0ms (DB: 10) | 302 Found [http://test.host/addresses]
+  [4;35;1mSQL (10.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (9.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#index (for 0.0.0.0 at 2010-07-09 14:33:34) [GET]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (10.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#index (for 0.0.0.0 at 2010-07-09 14:34:26) [GET]
+  [4;35;1mAddress Load (0.0ms)[0m   [0mSELECT * FROM `addresses` [0m
+Rendering template within layouts/addresses
+Rendering addresses/index
+Completed in 10ms (View: 0, DB: 10) | 200 OK [http://test.host/addresses]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#index (for 0.0.0.0 at 2010-07-09 14:34:47) [GET]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#index (for 0.0.0.0 at 2010-07-09 14:37:31) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mAddress Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `addresses`[0m
+  [4;35;1mAddress Load (0.0ms)[0m   [0mSELECT * FROM `addresses` WHERE (`addresses`.`users_id` = 1) [0m
+Rendering template within layouts/addresses
+Rendering addresses/index
+Completed in 50ms (View: 0, DB: 10) | 200 OK [http://test.host/addresses]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#new (for 0.0.0.0 at 2010-07-09 14:38:10) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mAddress Columns (10.0ms)[0m   [0;1mSHOW FIELDS FROM `addresses`[0m
+Rendering template within layouts/addresses
+Rendering addresses/new
+Completed in 20ms (View: 0, DB: 10) | 200 OK [http://test.host/addresses/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#index (for 0.0.0.0 at 2010-07-09 14:38:10) [GET]
+  [4;36;1mUser Load (10.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mAddress Load (0.0ms)[0m   [0mSELECT * FROM `addresses` WHERE (`addresses`.`users_id` = 1) [0m
+Rendering template within layouts/addresses
+Rendering addresses/index
+Completed in 10ms (View: 0, DB: 10) | 200 OK [http://test.host/addresses]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing AddressesController#destroy (for 0.0.0.0 at 2010-07-09 14:39:20) [POST]
+  Parameters: {"id"=>"2"}
+Redirected to http://test.host/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/addresses/2]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+  [4;35;1mAddress Columns (9.7ms)[0m   [0mSHOW FIELDS FROM `addresses`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `addresses` [0m
+
+
+Processing AddressesController#create (for 0.0.0.0 at 2010-07-09 14:39:20) [POST]
+  Parameters: {"address"=>{"address"=>"user_1@domain.com", "users_id"=>1, "encrypted_password"=>"encrypted_password"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mAddress Create (0.0ms)[0m   [0mINSERT INTO `addresses` (`users_id`, `address`, `encrypted_password`) VALUES(1, 'user_1@domain.com', 'encrypted_password')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=1
+Completed in 39ms (DB: 10) | 302 Found [http://test.host/addresses?address%5Baddress%5D=user_1%40domain.com&address%5Bencrypted_password%5D=encrypted_password&address%5Busers_id%5D=1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `addresses` [0m
+  [4;36;1mSQL (9.7ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#new (for 0.0.0.0 at 2010-07-09 14:39:20) [GET]
+  [4;35;1mUser Load (9.7ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/addresses
+Rendering addresses/new
+Completed in 10ms (View: 0, DB: 19) | 200 OK [http://test.host/addresses/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#index (for 0.0.0.0 at 2010-07-09 14:39:20) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mAddress Load (0.0ms)[0m   [0;1mSELECT * FROM `addresses` WHERE (`addresses`.`users_id` = 1) [0m
+Rendering template within layouts/addresses
+Rendering addresses/index
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/addresses]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing AddressesController#destroy (for 0.0.0.0 at 2010-07-09 14:40:02) [POST]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 10ms (DB: 0) | 302 Found [http://test.host/addresses/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+  [4;35;1mAddress Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `addresses`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `addresses` [0m
+
+
+Processing AddressesController#create (for 0.0.0.0 at 2010-07-09 14:40:02) [POST]
+  Parameters: {"address"=>{"address"=>"user_1@domain.com", "users_id"=>1, "encrypted_password"=>"encrypted_password"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mAddress Create (0.0ms)[0m   [0mINSERT INTO `addresses` (`users_id`, `address`, `encrypted_password`) VALUES(1, 'user_1@domain.com', 'encrypted_password')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=1
+Completed in 40ms (DB: 10) | 302 Found [http://test.host/addresses?address%5Baddress%5D=user_1%40domain.com&address%5Bencrypted_password%5D=encrypted_password&address%5Busers_id%5D=1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `addresses` [0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#new (for 0.0.0.0 at 2010-07-09 14:40:02) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/addresses
+Rendering addresses/new
+Completed in 10ms (View: 0, DB: 10) | 200 OK [http://test.host/addresses/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#index (for 0.0.0.0 at 2010-07-09 14:40:02) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mAddress Load (0.0ms)[0m   [0;1mSELECT * FROM `addresses` WHERE (`addresses`.`users_id` = 1) [0m
+Rendering template within layouts/addresses
+Rendering addresses/index
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/addresses]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing AddressesController#update (for 0.0.0.0 at 2010-07-09 14:46:46) [POST]
+  Parameters: {"address"=>"user_1_modified@domain.com", "encrypted_password"=>"encrypted_password", "id"=>"1"}
+Redirected to http://test.host/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/addresses/1?address=user_1_modified%40domain.com&encrypted_password=encrypted_password]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mAddress Columns (20.0ms)[0m   [0mSHOW FIELDS FROM `addresses`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `addresses` [0m
+
+
+Processing AddressesController#destroy (for 0.0.0.0 at 2010-07-09 14:46:46) [POST]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 0ms (DB: 20) | 302 Found [http://test.host/addresses/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `addresses` [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Columns (20.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `addresses` [0m
+
+
+Processing AddressesController#create (for 0.0.0.0 at 2010-07-09 14:46:46) [POST]
+  Parameters: {"address"=>{"address"=>"user_1@domain.com", "users_id"=>1, "encrypted_password"=>"encrypted_password"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mAddress Create (0.0ms)[0m   [0mINSERT INTO `addresses` (`users_id`, `address`, `encrypted_password`) VALUES(1, 'user_1@domain.com', 'encrypted_password')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=1
+Completed in 90ms (DB: 30) | 302 Found [http://test.host/addresses?address%5Baddress%5D=user_1%40domain.com&address%5Bencrypted_password%5D=encrypted_password&address%5Busers_id%5D=1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `addresses` [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#new (for 0.0.0.0 at 2010-07-09 14:46:46) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/addresses
+Rendering addresses/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/addresses/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#index (for 0.0.0.0 at 2010-07-09 14:46:47) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mAddress Load (0.0ms)[0m   [0;1mSELECT * FROM `addresses` WHERE (`addresses`.`users_id` = 1) [0m
+Rendering template within layouts/addresses
+Rendering addresses/index
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/addresses]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing AddressesController#update (for 0.0.0.0 at 2010-07-09 14:48:03) [POST]
+  Parameters: {"address"=>"user_1_modified@domain.com", "encrypted_password"=>"encrypted_password", "id"=>"1"}
+Redirected to http://test.host/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/addresses/1?address=user_1_modified%40domain.com&encrypted_password=encrypted_password]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+  [4;35;1mAddress Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `addresses`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `addresses` [0m
+
+
+Processing AddressesController#create (for 0.0.0.0 at 2010-07-09 14:48:03) [POST]
+  Parameters: {"address"=>{"address"=>"user_1@domain.com", "users_id"=>1, "encrypted_password"=>"encrypted_password"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mAddress Create (0.0ms)[0m   [0mINSERT INTO `addresses` (`users_id`, `address`, `encrypted_password`) VALUES(1, 'user_1@domain.com', 'encrypted_password')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=1
+Completed in 60ms (DB: 0) | 302 Found [http://test.host/addresses?address%5Baddress%5D=user_1%40domain.com&address%5Bencrypted_password%5D=encrypted_password&address%5Busers_id%5D=1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `addresses` [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#new (for 0.0.0.0 at 2010-07-09 14:48:03) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/addresses
+Rendering addresses/new
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/addresses/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#index (for 0.0.0.0 at 2010-07-09 14:48:03) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mAddress Load (0.0ms)[0m   [0;1mSELECT * FROM `addresses` WHERE (`addresses`.`users_id` = 1) [0m
+Rendering template within layouts/addresses
+Rendering addresses/index
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/addresses]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing AddressesController#update (for 0.0.0.0 at 2010-07-09 14:48:28) [POST]
+  Parameters: {"address"=>"user_1_modified@domain.com", "encrypted_password"=>"encrypted_password", "id"=>"1"}
+Redirected to http://test.host/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 11ms (DB: 0) | 302 Found [http://test.host/addresses/1?address=user_1_modified%40domain.com&encrypted_password=encrypted_password]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing AddressesController#destroy (for 0.0.0.0 at 2010-07-09 14:48:28) [POST]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/addresses/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (11.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (11.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+  [4;35;1mAddress Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `addresses`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `addresses` [0m
+
+
+Processing AddressesController#create (for 0.0.0.0 at 2010-07-09 14:48:28) [POST]
+  Parameters: {"address"=>{"address"=>"user_1@domain.com", "users_id"=>1, "encrypted_password"=>"encrypted_password"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mAddress Create (0.0ms)[0m   [0mINSERT INTO `addresses` (`users_id`, `address`, `encrypted_password`) VALUES(1, 'user_1@domain.com', 'encrypted_password')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=1
+Completed in 55ms (DB: 22) | 302 Found [http://test.host/addresses?address%5Baddress%5D=user_1%40domain.com&address%5Bencrypted_password%5D=encrypted_password&address%5Busers_id%5D=1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `addresses` [0m
+  [4;36;1mSQL (11.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#new (for 0.0.0.0 at 2010-07-09 14:48:28) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/addresses
+Rendering addresses/new
+Completed in 11ms (View: 0, DB: 11) | 200 OK [http://test.host/addresses/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#index (for 0.0.0.0 at 2010-07-09 14:48:28) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mAddress Load (11.0ms)[0m   [0;1mSELECT * FROM `addresses` WHERE (`addresses`.`users_id` = 1) [0m
+Rendering template within layouts/addresses
+Rendering addresses/index
+Completed in 88ms (View: 0, DB: 11) | 200 OK [http://test.host/addresses]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing AddressesController#destroy (for 0.0.0.0 at 2010-07-09 14:49:07) [POST]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/addresses/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+  [4;35;1mAddress Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `addresses`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `addresses` [0m
+
+
+Processing AddressesController#create (for 0.0.0.0 at 2010-07-09 14:49:08) [POST]
+  Parameters: {"address"=>{"address"=>"user_1@domain.com", "users_id"=>1, "encrypted_password"=>"encrypted_password"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mAddress Create (0.0ms)[0m   [0mINSERT INTO `addresses` (`users_id`, `address`, `encrypted_password`) VALUES(1, 'user_1@domain.com', 'encrypted_password')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=1
+Completed in 32ms (DB: 0) | 302 Found [http://test.host/addresses?address%5Baddress%5D=user_1%40domain.com&address%5Bencrypted_password%5D=encrypted_password&address%5Busers_id%5D=1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `addresses` [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#new (for 0.0.0.0 at 2010-07-09 14:49:08) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/addresses
+Rendering addresses/new
+Completed in 11ms (View: 0, DB: 0) | 200 OK [http://test.host/addresses/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#index (for 0.0.0.0 at 2010-07-09 14:49:08) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mAddress Load (0.0ms)[0m   [0;1mSELECT * FROM `addresses` WHERE (`addresses`.`users_id` = 1) [0m
+Rendering template within layouts/addresses
+Rendering addresses/index
+Completed in 22ms (View: 0, DB: 0) | 200 OK [http://test.host/addresses]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (10.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mAddress Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `addresses`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `addresses` [0m
+
+
+Processing AddressesController#destroy (for 0.0.0.0 at 2010-07-09 14:49:42) [POST]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 0ms (DB: 10) | 302 Found [http://test.host/addresses/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `addresses` [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Columns (10.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `addresses` [0m
+
+
+Processing AddressesController#create (for 0.0.0.0 at 2010-07-09 14:49:42) [POST]
+  Parameters: {"address"=>{"address"=>"user_1@domain.com", "users_id"=>1, "encrypted_password"=>"encrypted_password"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mAddress Create (0.0ms)[0m   [0mINSERT INTO `addresses` (`users_id`, `address`, `encrypted_password`) VALUES(1, 'user_1@domain.com', 'encrypted_password')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=1
+Completed in 50ms (DB: 10) | 302 Found [http://test.host/addresses?address%5Baddress%5D=user_1%40domain.com&address%5Bencrypted_password%5D=encrypted_password&address%5Busers_id%5D=1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `addresses` [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (10.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#new (for 0.0.0.0 at 2010-07-09 14:49:42) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/addresses
+Rendering addresses/new
+Completed in 10ms (View: 0, DB: 10) | 200 OK [http://test.host/addresses/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#index (for 0.0.0.0 at 2010-07-09 14:49:42) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mAddress Load (0.0ms)[0m   [0;1mSELECT * FROM `addresses` WHERE (`addresses`.`users_id` = 1) [0m
+Rendering template within layouts/addresses
+Rendering addresses/index
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/addresses]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mAddress Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `addresses`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `addresses` [0m
+
+
+Processing AddressesController#destroy (for 0.0.0.0 at 2010-07-09 14:50:06) [POST]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/addresses/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `addresses` [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (10.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `addresses` [0m
+
+
+Processing AddressesController#create (for 0.0.0.0 at 2010-07-09 14:50:06) [POST]
+  Parameters: {"address"=>{"address"=>"user_1@domain.com", "users_id"=>1, "encrypted_password"=>"encrypted_password"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mAddress Create (0.0ms)[0m   [0mINSERT INTO `addresses` (`users_id`, `address`, `encrypted_password`) VALUES(1, 'user_1@domain.com', 'encrypted_password')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=1
+Completed in 50ms (DB: 10) | 302 Found [http://test.host/addresses?address%5Baddress%5D=user_1%40domain.com&address%5Bencrypted_password%5D=encrypted_password&address%5Busers_id%5D=1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `addresses` [0m
+  [4;36;1mSQL (40.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#new (for 0.0.0.0 at 2010-07-09 14:50:06) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/addresses
+Rendering addresses/new
+Completed in 20ms (View: 10, DB: 40) | 200 OK [http://test.host/addresses/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#index (for 0.0.0.0 at 2010-07-09 14:50:06) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mAddress Load (0.0ms)[0m   [0;1mSELECT * FROM `addresses` WHERE (`addresses`.`users_id` = 1) [0m
+Rendering template within layouts/addresses
+Rendering addresses/index
+Completed in 20ms (View: 0, DB: 0) | 200 OK [http://test.host/addresses]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing AddressesController#update (for 0.0.0.0 at 2010-07-09 14:51:53) [POST]
+  Parameters: {"address"=>"user_1_modified@domain.com", "encrypted_password"=>"encrypted_password", "id"=>"1"}
+Redirected to http://test.host/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/addresses/1?address=user_1_modified%40domain.com&encrypted_password=encrypted_password]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mAddress Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `addresses`[0m
+  [4;36;1mAddress Load (0.0ms)[0m   [0;1mSELECT * FROM `addresses` WHERE (`addresses`.`id` = 1) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `addresses` [0m
+
+
+Processing AddressesController#destroy (for 0.0.0.0 at 2010-07-09 14:51:53) [POST]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/addresses/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `addresses` [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (10.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `addresses` [0m
+
+
+Processing AddressesController#create (for 0.0.0.0 at 2010-07-09 14:51:53) [POST]
+  Parameters: {"address"=>{"address"=>"user_1@domain.com", "users_id"=>1, "encrypted_password"=>"encrypted_password"}}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mAddress Create (0.0ms)[0m   [0;1mINSERT INTO `addresses` (`users_id`, `address`, `encrypted_password`) VALUES(1, 'user_1@domain.com', 'encrypted_password')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=1
+Completed in 76ms (DB: 11) | 302 Found [http://test.host/addresses?address%5Baddress%5D=user_1%40domain.com&address%5Bencrypted_password%5D=encrypted_password&address%5Busers_id%5D=1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `addresses` [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#new (for 0.0.0.0 at 2010-07-09 14:51:53) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/addresses
+Rendering addresses/new
+Completed in 11ms (View: 11, DB: 0) | 200 OK [http://test.host/addresses/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#index (for 0.0.0.0 at 2010-07-09 14:51:53) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mAddress Load (0.0ms)[0m   [0mSELECT * FROM `addresses` WHERE (`addresses`.`users_id` = 1) [0m
+Rendering template within layouts/addresses
+Rendering addresses/index
+Completed in 11ms (View: 0, DB: 0) | 200 OK [http://test.host/addresses]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing AddressesController#update (for 0.0.0.0 at 2010-07-09 14:53:06) [POST]
+  Parameters: {"address"=>"user_1_modified@domain.com", "encrypted_password"=>"encrypted_password", "id"=>"1"}
+Redirected to http://test.host/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/addresses/1?address=user_1_modified%40domain.com&encrypted_password=encrypted_password]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mAddress Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `addresses`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `addresses` [0m
+
+
+Processing AddressesController#destroy (for 0.0.0.0 at 2010-07-09 14:53:06) [POST]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 0ms (DB: 10) | 302 Found [http://test.host/addresses/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `addresses` [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `addresses` [0m
+
+
+Processing AddressesController#create (for 0.0.0.0 at 2010-07-09 14:53:06) [POST]
+  Parameters: {"address"=>{"address"=>"user_1@domain.com", "users_id"=>1, "encrypted_password"=>"encrypted_password"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mAddress Create (0.0ms)[0m   [0mINSERT INTO `addresses` (`users_id`, `address`, `encrypted_password`) VALUES(1, 'user_1@domain.com', 'encrypted_password')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=1
+Completed in 40ms (DB: 0) | 302 Found [http://test.host/addresses?address%5Baddress%5D=user_1%40domain.com&address%5Bencrypted_password%5D=encrypted_password&address%5Busers_id%5D=1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `addresses` [0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (10.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#new (for 0.0.0.0 at 2010-07-09 14:53:06) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/addresses
+Rendering addresses/new
+Completed in 0ms (View: 0, DB: 20) | 200 OK [http://test.host/addresses/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#index (for 0.0.0.0 at 2010-07-09 14:53:06) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mAddress Load (0.0ms)[0m   [0;1mSELECT * FROM `addresses` WHERE (`addresses`.`users_id` = 1) [0m
+Rendering template within layouts/addresses
+Rendering addresses/index
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/addresses]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#update (for 0.0.0.0 at 2010-07-09 14:53:54) [POST]
+  Parameters: {"address"=>"user_1_modified@domain.com", "encrypted_password"=>"encrypted_password", "id"=>"1"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mAddress Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `addresses`[0m
+  [4;35;1mAddress Load (0.0ms)[0m   [0mSELECT * FROM `addresses` WHERE (`addresses`.`id` = 1) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `addresses` [0m
+
+
+Processing AddressesController#destroy (for 0.0.0.0 at 2010-07-09 14:53:54) [POST]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mAddress Load (0.0ms)[0m   [0mSELECT * FROM `addresses` WHERE (`addresses`.`id` = 1) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mAddress Destroy (0.0ms)[0m   [0mDELETE FROM `addresses` WHERE `id` = 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses
+Completed in 10ms (DB: 0) | 302 Found [http://test.host/addresses/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `addresses` [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `addresses` [0m
+
+
+Processing AddressesController#create (for 0.0.0.0 at 2010-07-09 14:53:54) [POST]
+  Parameters: {"address"=>{"address"=>"user_1@domain.com", "users_id"=>1, "encrypted_password"=>"encrypted_password"}}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mAddress Create (0.0ms)[0m   [0;1mINSERT INTO `addresses` (`users_id`, `address`, `encrypted_password`) VALUES(1, 'user_1@domain.com', 'encrypted_password')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=1
+Completed in 20ms (DB: 0) | 302 Found [http://test.host/addresses?address%5Baddress%5D=user_1%40domain.com&address%5Bencrypted_password%5D=encrypted_password&address%5Busers_id%5D=1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `addresses` [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#new (for 0.0.0.0 at 2010-07-09 14:53:54) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/addresses
+Rendering addresses/new
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/addresses/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#index (for 0.0.0.0 at 2010-07-09 14:53:54) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mAddress Load (0.0ms)[0m   [0mSELECT * FROM `addresses` WHERE (`addresses`.`users_id` = 1) [0m
+Rendering template within layouts/addresses
+Rendering addresses/index
+Completed in 20ms (View: 10, DB: 0) | 200 OK [http://test.host/addresses]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#update (for 0.0.0.0 at 2010-07-09 14:55:30) [POST]
+  Parameters: {"address"=>{"address"=>"user_1_modified@domain.com", "encrypted_password"=>"encrypted_password"}, "id"=>"1"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mAddress Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `addresses`[0m
+  [4;35;1mAddress Load (0.0ms)[0m   [0mSELECT * FROM `addresses` WHERE (`addresses`.`id` = 1) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mAddress Update (0.0ms)[0m   [0mUPDATE `addresses` SET `address` = 'user_1_modified@domain.com' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=1
+Completed in 30ms (DB: 10) | 302 Found [http://test.host/addresses/1?address%5Baddress%5D=user_1_modified%40domain.com&address%5Bencrypted_password%5D=encrypted_password]
+  [4;35;1mSQL (10.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `addresses` [0m
+
+
+Processing AddressesController#destroy (for 0.0.0.0 at 2010-07-09 14:55:30) [POST]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mAddress Load (0.0ms)[0m   [0;1mSELECT * FROM `addresses` WHERE (`addresses`.`id` = 1) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mAddress Destroy (0.0ms)[0m   [0;1mDELETE FROM `addresses` WHERE `id` = 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses
+Completed in 20ms (DB: 10) | 302 Found [http://test.host/addresses/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `addresses` [0m
+  [4;35;1mSQL (10.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `addresses` [0m
+
+
+Processing AddressesController#create (for 0.0.0.0 at 2010-07-09 14:55:30) [POST]
+  Parameters: {"address"=>{"address"=>"user_1@domain.com", "users_id"=>1, "encrypted_password"=>"encrypted_password"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mAddress Create (0.0ms)[0m   [0mINSERT INTO `addresses` (`users_id`, `address`, `encrypted_password`) VALUES(1, 'user_1@domain.com', 'encrypted_password')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/addresses?user=1
+Completed in 20ms (DB: 20) | 302 Found [http://test.host/addresses?address%5Baddress%5D=user_1%40domain.com&address%5Bencrypted_password%5D=encrypted_password&address%5Busers_id%5D=1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `addresses` [0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#new (for 0.0.0.0 at 2010-07-09 14:55:30) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/addresses
+Rendering addresses/new
+Completed in 10ms (View: 0, DB: 10) | 200 OK [http://test.host/addresses/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = 'user_1') LIMIT 1[0m
+
+
+Processing AddressesController#index (for 0.0.0.0 at 2010-07-09 14:55:30) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mAddress Load (0.0ms)[0m   [0;1mSELECT * FROM `addresses` WHERE (`addresses`.`users_id` = 1) [0m
+Rendering template within layouts/addresses
+Rendering addresses/index
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://test.host/addresses]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m

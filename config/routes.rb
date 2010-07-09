@@ -15,6 +15,7 @@ ActionController::Routing::Routes.draw do |map|
   map.login 'login', :controller => 'user', :action => 'login'
   map.login 'logout', :controller => 'user', :action => 'logout'
   map.new_user '/new', :controller => 'user', :action => 'new'
+  map.new_address '/addresses/new', :controller => 'address', :action => 'new'
   map.authentication '/authentication', :controller => 'user', :action => 'authentication'
   
   map.begin_login_process '/begin_login_process', :controller => 'user', :action => 'begin_login_process'

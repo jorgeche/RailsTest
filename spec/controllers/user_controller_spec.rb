@@ -43,19 +43,20 @@ describe UserController do
       end
     end
 
-    it "should log the users" do
-      
-      username = "user_"
-      
-      for counter in 1..5
- 
-        post :end_login_process, :username => username + counter.to_s(), :encrypted_username => "encrypted_" + username + counter.to_s()  
-        assert_redirected_to :addresses
-      end
+    it "should log a user" do
+
+      post :end_login_process, :username => "user_1", :decrypted_username => "user_1"
+    
+      assert_redirected_to(:controller => :addresses, :user => 1)
       
     end
   end
   
-
-
+  describe "delete user" do
+    
+    it "should delete user_2" do
+    
+        post :destroy, :id => 2
+    end
+  end
 end

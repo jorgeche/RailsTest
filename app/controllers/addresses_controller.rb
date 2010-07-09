@@ -5,7 +5,6 @@ class AddressesController < ApplicationController
   
   def index
     @addresses = Address.findByUser(session[:user][:id])
-    #@addresses = Address.all
 
     respond_to do |format|
       #format.html {redirect_to(@addresses, :notice => session[:user][:id])}# index.html.erb

@@ -26,6 +26,7 @@ CREATE  TABLE IF NOT EXISTS `railstest_development`.`addresses` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `users_id` INT NOT NULL ,
   `address` VARCHAR(255) NOT NULL ,
+  `encrypted_password` VARCHAR(255) NOT NULL ,
   PRIMARY KEY (`id`) ,
   INDEX `fk_addresses_users` (`users_id` ASC) ,
   CONSTRAINT `fk_addresses_users`
